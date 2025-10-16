@@ -7,7 +7,9 @@ import { Canvas } from '@react-three/fiber'
 import { Suspense } from 'react'
 import { Experience } from '../components/Experience'
 
+
 const Kitchen = () => {
+
     return (
         <div className="w-full h-auto bg-[#FDF7F2] overflow-hidden">
             <div className="wrapper">
@@ -17,8 +19,8 @@ const Kitchen = () => {
                         <p className="heading3">Our Kitchen ——</p>
                         <h1 className="heading1">Where Cleanliness Meets Perfection</h1>
                         <p className='heading2 mt-8'>
-                            Step into a kitchen where freshness meets care. Every dish 
-                            begins in a spotless, organized space that ensures quality, 
+                            Step into a kitchen where freshness meets care. Every dish
+                            begins in a spotless, organized space that ensures quality,
                             hygiene, and authentic taste in every bite.
                         </p>
                     </div>
@@ -40,7 +42,15 @@ const Kitchen = () => {
                         <Loader
                             containerStyles={{
                                 backgroundColor: "transparent",
-                                color: "black"
+                            }}
+                            innerStyles={{
+                                color: "black", // text color
+                            }}
+                            dataStyles={{
+                                color: "black", // loading percentage color
+                            }}
+                            barStyles={{
+                                backgroundColor: "black", // progress bar color (optional)
                             }}
                         />
                         <Canvas

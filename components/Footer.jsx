@@ -1,18 +1,9 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin, Phone, Mail } from 'lucide-react';
-import { useEffect, useState } from 'react';
+
 
 export default function Footer() {
-    const [isMounted, SetIsMounted] = useState(false);
-
-    useEffect(() => {
-        SetIsMounted(true)
-    }, []);
-
-    if(!isMounted) return null
     
     return (
         <footer className="bg-white border-t border-gray-200 text-gray-700">

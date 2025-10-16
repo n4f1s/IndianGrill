@@ -18,8 +18,8 @@ export default function Button({
   // Base classes for button
   const baseClasses = `
     inline-flex items-center justify-center
-    rounded-full font-semibold px-6 py-3
-    transition duration-300
+    rounded-full font-semibold px-6 py-3 text-nowrap
+    transition duration-300 text-xs sm:text-base
     disabled:opacity-50 disabled:cursor-not-allowed
     ${fullWidth ? "w-full" : "inline-flex"}
   `;

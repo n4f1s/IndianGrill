@@ -1,6 +1,6 @@
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
-import Footer from "@/sections/Footer";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { atom, useAtom } from "jotai";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const pictures = [
   "11", "12", "21", "22", "31", "32", "41", "42",
@@ -24,7 +24,7 @@ export const usePageFlipSound = () => {
     if (audioRef.current) {
       audioRef.current.currentTime = 0;
       audioRef.current.volume = 0.3;
-      audioRef.current.play().catch(() => {});
+      audioRef.current.play().catch(() => { });
     }
   };
 
@@ -44,17 +44,20 @@ pages.push({ front: pictures[pictures.length - 1], back: "book-back" });
 export const UI = () => {
   const [page, setPage] = useAtom(pageAtom);
   const audioRef = useRef(null);
+  const [isMounted, SetIsMounted] = useState(false);
+
 
   // Prepare audio
   useEffect(() => {
     audioRef.current = new Audio("/audios/page-flip-01a.mp3");
     audioRef.current.load();
+    SetIsMounted(true)
   }, []);
 
   const playSound = () => {
     if (audioRef.current) {
       audioRef.current.currentTime = 0;
-      audioRef.current.play().catch(() => {});
+      audioRef.current.play().catch(() => { });
     }
   };
 
@@ -69,6 +72,8 @@ export const UI = () => {
       return () => clearTimeout(timer);
     }
   }, [page, setPage]);
+
+  if (!isMounted) return null;
 
   return (
     <div
