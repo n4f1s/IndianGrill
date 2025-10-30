@@ -10,6 +10,7 @@ const MAIN_NAV = [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
     { label: 'Promotions', href: '/promotions' },
+    { label: 'Gallery', href: '/gallery' },
     { label: 'Order', href: '/order' },
     { label: 'Menu', href: '/menu' },
 ];

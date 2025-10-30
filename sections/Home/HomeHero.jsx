@@ -11,10 +11,12 @@ const HomeHero = () => {
                     {/* Image Section — comes first on mobile, second on lg+ */}
                     <div className="order-1 lg:order-2 lg:col-span-2 relative h-[400px] w-full rounded-2xl overflow-hidden">
                         <Image
-                            src="https://ik.imagekit.io/awwybhhmo/satellite_images/indian/gray/hero/3.jpg?tr="
+                            src="/homeHero.webp"
                             alt="hero"
                             fill
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, (max-width: 1280px) 66vw, 50vw"
                             priority
+                            fetchPriority="high"
                             className="object-cover"
                         />
                     </div>

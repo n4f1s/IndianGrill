@@ -16,7 +16,7 @@ function OurChef() {
                                     Our chef
                                 </h1>
                                 <p className='heading2 mt-8'>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti nam velit, soluta quisquam qui libero accusantium vitae quae facere illum eligendi ducimus aliquid aspernatur, reprehenderit necessitatibus nesciunt beatae et dignissimos.
+                                    From the first sizzle to the final wrap, our chef leads a spotless, high‑energy kitchen where freshness comes first. Seasonal produce, hand‑ground spices, and time‑tested techniques come together to create food that’s vibrant, balanced, and deeply satisfying. Whether it’s a classic tikka or a modern wrap, every plate is cooked with care, plated with pride, and sent out hot.
                                 </p>
                             </div>
                         </div>

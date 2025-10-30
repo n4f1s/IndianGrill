@@ -14,7 +14,7 @@ const Quality = () => {
                             providing a wonderful eating experience since 2002.
                         </p>
                         <img
-                            src="/popularDish4.jpg"
+                            src="/foods/combo.webp"
                             alt=""
                             className="rounded-2xl w-full h-[300px] object-cover"
                         />
@@ -22,14 +22,14 @@ const Quality = () => {
 
                     {/* Image Stack */}
                     <div className="hidden lg:block w-full h-full">
-                        <div className="flex-1 flex w-full h-full justify-center lg:justify-start 
-                            items-center relative">
+                        <div className="flex-1 flex w-full h-full justify-center lg:justify-start items-center relative">
                             {/* Front Image */}
                             <div className="relative w-72 h-80 z-10">
                                 <Image
                                     src="/quality2.jpg"
                                     alt="Burger with wedges"
                                     fill
+                                    sizes="(max-width: 1024px) 0px, 288px"
                                     className="object-cover rounded-xl shadow-lg"
                                 />
                             </div>
@@ -41,6 +41,7 @@ const Quality = () => {
                                     src="/quality1.jpg"
                                     alt="Pizza slice"
                                     fill
+                                    sizes="(max-width: 1024px) 0px, 288px"
                                     className="object-cover rounded-xl shadow-2xl"
                                 />
                             </div>

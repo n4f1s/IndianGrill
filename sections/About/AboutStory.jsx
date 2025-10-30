@@ -86,8 +86,7 @@ export default function AboutStory() {
                         </h2>
 
                         <p className="mt-5 text-gray-700 leading-relaxed">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-                            in some form, by injected humour, or randomised words which don’t look even slightly believable.
+                            Born from a love of street‑side wraps and home‑kitchen hospitality, Indian Grill Wrap & Go serves vibrant flavors made fresh every day. From hand‑marinated proteins and crisp veggies to house‑made chutneys, every wrap is rolled to order and delivered hot.
                         </p>
 
                         <p className="mt-4 text-gray-700 leading-relaxed italic">
@@ -112,7 +111,7 @@ export default function AboutStory() {
                                     <Crown className="h-6 w-6" aria-hidden />
                                 </div>
                                 <div>
-                                    <div className="text-xl sm:text-2xl font-bold text-gray-900">100+ Menu</div>
+                                    <div className="text-xl sm:text-2xl font-bold text-gray-900">100+ Items</div>
                                     <p className="text-gray-500">Food ready for everyone</p>
                                 </div>
                             </div>

@@ -1,9 +1,9 @@
 'use client';
 
-import React from 'react';
+
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay, A11y } from 'swiper/modules';
+import { Pagination, Autoplay, A11y } from 'swiper/modules';
 
 // Swiper core styles + modules
 import 'swiper/css';
@@ -18,42 +18,42 @@ const testimonials = [
         role: 'Food Blogger',
         quote:
             'The chicken tikka wrap was perfectly spiced and so fresh. Easily my new go-to lunch spot!',
-        avatar: '/testimonials/testimonial1.webp',
+        avatar: '/testimonials/testimonial1.jpg',
     },
     {
         name: 'Rahul S.',
         role: 'Local Guide',
         quote:
             'Super clean kitchen and fast service. The paneer wrap had incredible texture and flavor.',
-        avatar: '/testimonials/testimonial1.webp',
+        avatar: '/testimonials/testimonial2.jpg',
     },
     {
         name: 'Maya L.',
         role: 'Regular',
         quote:
             'Crisp veggies, warm bread, and generous fillings. Consistently great every visit.',
-        avatar: '/testimonials/testimonial1.webp',
+        avatar: '/testimonials/testimonial3.jpg',
     },
     {
-        name: 'Ayesha K.',
+        name: 'James H.',
         role: 'Food Blogger',
         quote:
             'The chicken tikka wrap was perfectly spiced and so fresh. Easily my new go-to lunch spot!',
-        avatar: '/testimonials/testimonial1.webp',
+        avatar: '/testimonials/testimonial1.jpg',
     },
     {
-        name: 'Rahul S.',
+        name: 'Sarah P.',
         role: 'Local Guide',
         quote:
             'Super clean kitchen and fast service. The paneer wrap had incredible texture and flavor.',
-        avatar: '/testimonials/testimonial1.webp',
+        avatar: '/testimonials/testimonial3.jpg',
     },
     {
-        name: 'Maya L.',
+        name: 'Rachel K.',
         role: 'Regular',
         quote:
             'Crisp veggies, warm bread, and generous fillings. Consistently great every visit.',
-        avatar: '/testimonials/testimonial1.webp',
+        avatar: '/testimonials/testimonial1.jpg',
     },
 ];
 
@@ -75,7 +75,7 @@ export default function Testimonials() {
                     slidesPerView={1}
                     spaceBetween={24}
                     loop
-                    autoplay={{ delay: 4000, disableOnInteraction: false }}
+                    autoplay={{ delay: 4000, disableOnInteraction: true }}
                     pagination={{ clickable: true }}
                     navigation
                     breakpoints={{

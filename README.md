@@ -34,3 +34,111 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+```
+indiangrillwrapgo
+├─ app
+│  ├─ about
+│  │  └─ page.jsx
+│  ├─ auth
+│  │  ├─ login
+│  │  │  └─ page.jsx
+│  │  └─ signup
+│  │     └─ page.jsx
+│  ├─ favicon.ico
+│  ├─ gallery
+│  │  └─ page.jsx
+│  ├─ globals.css
+│  ├─ layout.js
+│  ├─ not-found.jsx
+│  └─ page.js
+├─ components
+│  ├─ Book.jsx
+│  ├─ Button.jsx
+│  ├─ Experience.jsx
+│  ├─ Footer.jsx
+│  ├─ Navbar.jsx
+│  └─ UI.jsx
+├─ jsconfig.json
+├─ next.config.mjs
+├─ package.json
+├─ pnpm-lock.yaml
+├─ postcss.config.mjs
+├─ public
+│  ├─ about
+│  │  ├─ aboutHero.webp
+│  │  ├─ ourChef.png
+│  │  ├─ ourStory1.webp
+│  │  ├─ ourStory2.webp
+│  │  ├─ ourStory3.webp
+│  │  └─ ourStory4.webp
+│  ├─ audios
+│  │  └─ page-flip-01a.mp3
+│  ├─ enjoy1.jpg
+│  ├─ enjoy2.jpg
+│  ├─ enjoyBg.jpg
+│  ├─ foods
+│  │  ├─ AlooGobi.jpg
+│  │  ├─ beefBhuna.jpg
+│  │  ├─ beefCurry.jpg
+│  │  ├─ beefKorma.jpg
+│  │  ├─ beefVindaloo.jpg
+│  │  ├─ caesarSalad.jpg
+│  │  ├─ chickenTikkaMasala.jpg
+│  │  ├─ chickenTikkaWrap.jpg
+│  │  ├─ chickenWrap.jpg
+│  │  ├─ chikenBiryani.jpg
+│  │  ├─ combo.webp
+│  │  ├─ cucumberSalad.jpg
+│  │  ├─ kashmiriPulao.jpg
+│  │  ├─ lambBiryani.jpg
+│  │  ├─ lambCoconut.jpg
+│  │  ├─ lambDanivalKorma.jpg
+│  │  ├─ lambTikkaMasala.jpg
+│  │  ├─ lambVindaloo.jpg
+│  │  ├─ lampBhuna.jpg
+│  │  ├─ saladChaat.jpg
+│  │  ├─ shrimpBiryani.jpg
+│  │  ├─ shrimpSalad.jpg
+│  │  └─ vegetableBiryani.jpg
+│  ├─ homeHero.webp
+│  ├─ logo.svg
+│  ├─ quality1.jpg
+│  ├─ quality2.jpg
+│  ├─ testimonials
+│  │  ├─ testimonial1.jpg
+│  │  ├─ testimonial2.jpg
+│  │  └─ testimonial3.jpg
+│  └─ textures
+│     ├─ 11.webp
+│     ├─ 12.webp
+│     ├─ 21.webp
+│     ├─ 22.webp
+│     ├─ 31.webp
+│     ├─ 32.webp
+│     ├─ 41.webp
+│     ├─ 42.webp
+│     ├─ 51.webp
+│     ├─ 52.webp
+│     ├─ 61.webp
+│     ├─ 62.webp
+│     ├─ 71.webp
+│     ├─ 72.webp
+│     ├─ book-back.webp
+│     └─ book-cover.webp
+├─ README.md
+└─ sections
+   ├─ About
+   │  ├─ AboutHero.jsx
+   │  ├─ AboutStory.jsx
+   │  └─ OurChef.jsx
+   └─ Home
+      ├─ ContactUs.jsx
+      ├─ Enjoy.jsx
+      ├─ HomeHero.jsx
+      ├─ Kitchen.jsx
+      ├─ OrderOnline.jsx
+      ├─ Quality.jsx
+      └─ Testimonials.jsx
+
+```

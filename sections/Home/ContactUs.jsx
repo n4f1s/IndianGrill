@@ -5,6 +5,7 @@ import { MapPin, Mail, Clock, Phone } from "lucide-react";
 
 
 
+
 export default function ContactUs() {
     return (
         <section className="bg-white">
@@ -23,7 +24,7 @@ export default function ContactUs() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {/* Contact details */}
-                    <aside className="rounded-2xl border border-gray-200 p-6 sm:p-8 bg-tertiary">
+                    <aside className="rounded-2xl border border-gray-200 p-6 sm:p-8 bg-tertiary relative">
                         <h3 className="heading3">Restaurant info</h3>
                         <ul className="mt-4 space-y-4">
                             <li className="flex items-start gap-4">
@@ -32,7 +33,7 @@ export default function ContactUs() {
                                 </span>
                                 <div>
                                     <p className="text-sm sm:text-xl font-semibold text-gray-800">Address</p>
-                                    <p className="text-gray-600">123 Spice Ave, City Center, YourTown</p>
+                                    <p className="text-gray-600">595 Washington Ave, Brooklyn, NY 11238</p>
                                 </div>
                             </li>
 
@@ -43,7 +44,7 @@ export default function ContactUs() {
                                 <div>
                                     <p className="text-sm sm:text-xl font-semibold text-gray-800">Phone</p>
                                     <a className="text-gray-700 hover:underline" href="tel:+11234567890">
-                                        +1 (123) 456-7890
+                                        +1 (123) 7188578100
                                     </a>
                                 </div>
                             </li>
@@ -65,8 +66,8 @@ export default function ContactUs() {
                                     <Clock className="h-6 w-6" aria-hidden />
                                 </span>
                                 <div>
-                                    <p className="text-sm sm:text-xl font-semibold text-gray-800">Hours</p>
-                                    <p className="text-gray-600">Mon–Sun: 11:00 AM – 10:00 PM</p>
+                                    <p className="text-sm sm:text-xl font-semibold text-gray-800">Hours of Operation</p>
+                                    <p className="text-gray-600">Mon–Sun: 11:30 AM – 11:30 PM</p>
                                 </div>
                             </li>
                         </ul>
