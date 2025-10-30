@@ -4,14 +4,14 @@
   /* Solid Colors */
   --primary: #2c7a7b;
   --secondary: #1e5354;
-
+  --tertiary: #fdf7f2;
 }
 
 /* Tailwind theme variables */
 @theme inline {
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-
+  --color-tertiary: var(--tertiary);
 
   --font-playfair: var(--font-playfair), sans-serif;
 }

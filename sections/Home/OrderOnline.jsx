@@ -42,7 +42,7 @@ const dishes = [
 
 const OrderOnline = () => {
   return (
-    <div className="w-full h-auto bg-[#FDF7F2] overflow-hidden">
+    <div className="w-full h-auto bg-tertiary overflow-hidden">
       <div className="wrapper">
         <p className="heading3">Chef Recommendation ——</p>
         <h1 className="heading1">Order Online</h1>

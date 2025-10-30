@@ -2,12 +2,12 @@ import Image from "next/image";
 
 const Quality = () => {
     return (
-        <section className="bg-white relative overflow-hidden w-full h-auto">
+        <section className="bg-tertiary relative overflow-hidden w-full h-auto">
             <div className="sm:px-16 px-4 py-10 sm:py-16 max-w-[1490px] w-full h-full mx-auto relative">
                 <div className="grid lg:grid-cols-2 gap-14 items-center w-full h-full">
                     {/* Text Content */}
                     <div className="flex flex-col text-center lg:text-left order-1 lg:order-2">
-                        <h4 className="heading3">NUTRITION AND TASTE</h4>
+                        <h4 className="heading3">NUTRITION AND TASTE ——</h4>
                         <h2 className="heading1">QUALITY & BALANCED FOOD</h2>
                         <p className="heading2 my-8">
                             We serve food, harmony, and laughter. Making delicious food and

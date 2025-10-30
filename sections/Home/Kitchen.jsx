@@ -1,17 +1,18 @@
 "use client"
 
 
+import { Experience } from '@/components/Experience'
+import { UI } from '@/components/UI'
 import { Loader } from '@react-three/drei'
-import { UI } from '../components/UI'
 import { Canvas } from '@react-three/fiber'
 import { Suspense } from 'react'
-import { Experience } from '../components/Experience'
+
 
 
 const Kitchen = () => {
 
     return (
-        <div className="w-full h-auto bg-[#FDF7F2] overflow-hidden">
+        <div className="w-full h-auto bg-tertiary overflow-hidden">
             <div className="wrapper">
                 <div className="grid lg:grid-cols-4">
                     {/* Left content */}
