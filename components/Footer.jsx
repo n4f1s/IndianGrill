@@ -1,10 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin, Phone, Mail } from 'lucide-react';
+import { Facebook } from 'lucide-react';
+import { Instagram } from 'lucide-react';
+import { Ticket } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 
 
 export default function Footer() {
-    
+
     return (
         <footer className="bg-white border-t border-gray-200 text-gray-700">
             <div className="wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -49,6 +53,40 @@ export default function Footer() {
                         <li className="flex items-center gap-2"><Phone size={16} /> (212) 555-7890</li>
                         <li className="flex items-center gap-2"><Mail size={16} /> info@indiangrill.com</li>
                     </ul>
+
+                    <div className="mt-4 flex items-center gap-3">
+                        <a
+                            href="https://www.facebook.com/yourpage"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook"
+                            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 text-neutral-600 hover:bg-primary transition"
+                        >
+                            <Facebook size={18} />
+                        </a>
+
+                        <a
+                            href="https://www.instagram.com/yourhandle"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 text-neutral-600 hover:bg-primary transition"
+                        >
+                            <Instagram size={18} />
+                        </a>
+
+                        <a
+                            href="https://wa.me/12125557890"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="WhatsApp"
+                            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 text-neutral-600 hover:bg-primary transition"
+                            title="WhatsApp"
+                        >
+                            {/* Lucide has no WhatsApp brand; MessageCircle is a clean fallback */}
+                            <MessageCircle size={18} />
+                        </a>
+                    </div>
                 </div>
             </div>
 

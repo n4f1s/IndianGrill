@@ -53,15 +53,27 @@ const Navbar = () => {
                             {MAIN_NAV.map((item) => {
                                 const active = isActive(item.href);
                                 return (
-                                    <li key={item.href}>
+                                    <li key={item.href} className="relative group">
                                         <Link
                                             href={item.href}
-                                            className={
-                                                `text-lg font-bold transition-colors text-black hover:text-primary ` +
-                                                (active ? 'text-primary underline underline-offset-4' : '')
-                                            }
+                                            aria-current={active ? 'page' : undefined}
+                                            className={`text-lg font-bold transition-colors duration-200 ${active ? 'text-primary' : 'text-black hover:text-primary'}`}
                                         >
-                                            {item.label}
+                                            <span
+                                                className={`inline-block transition-transform duration-200 ease-out group-hover:-translate-y-[1px] group-hover:opacity-100 ${active ? '' : 'opacity-95'}`}
+                                            >
+                                                {item.label}
+                                            </span>
+
+                                            {/* Underline */}
+                                            <span
+                                                className={`pointer-events-none absolute -bottom-1 left-0 right-0 h-[2px] rounded-full bg-primary
+                                                 will-change-transform transform-gpu transition-transform duration-300 ease-out
+                                                ${active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}
+                                                ${active ? 'origin-left' : 'origin-center group-hover:origin-left'}`}
+                                                style={{ transform: active ? 'translate3d(0,0,0) scaleX(1)' : undefined }}
+                                                aria-hidden="true"
+                                            />
                                         </Link>
                                     </li>
                                 );

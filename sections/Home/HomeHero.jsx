@@ -32,7 +32,7 @@ const HomeHero = () => {
                             Manchurian that keep customers coming back. We offer delivery and
                             takeout for lunch and dinner, delighting Prospect Heights, Clinton
                             Hill, and Fort Greene neighbors. Customers love our fresh spices,
-                            generous portions, and quick service!
+                            generous portions, and quick service.
                         </p>
 
                         <div className="flex flex-wrap gap-4 mt-8">
